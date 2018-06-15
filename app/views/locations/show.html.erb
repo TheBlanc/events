@@ -1,3 +1,4 @@
 <h1><%= @location.name %></h1>
+
 <%= link_to 'Edit', edit_location_path %>
-<%= render 'single_location', location: @location %>
+<%= render 'locations/single_location', location: @location, h3_name: false %>
