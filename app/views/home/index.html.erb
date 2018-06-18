@@ -18,5 +18,5 @@
   <%= link_to 'New Location', new_location_path %>
 </p>
 <% @locations.each do |current_location| %>
-  <%= render 'locations/single_location', location: current_location %>
+  <%= render 'locations/single_location', location: current_location, h3_name: true %>
 <% end %>

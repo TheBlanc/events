@@ -36,7 +36,8 @@ class EventsController < ApplicationController
     @event.capacity = params[:event][:capacity]
     @event.city = params[:event][:city]
 
-    if @event.save
+    save_success = @event.save
+    if save_success
       redirect_to events_url
     else
       redirect_to new_event_url
